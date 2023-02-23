@@ -29,7 +29,6 @@ public class Vetor {
     }
 
     public Aluno getByIDx(int posicao) {
-
         return null;
     }
 
@@ -38,11 +37,16 @@ public class Vetor {
     }
 
     public boolean contains(Aluno aluno) {
+        for (int i = 0; i < this.totalDeAlunos; i++) {
+            if (aluno.equals(this.alunos[i])) {
+                return true;
+            }
+        }
         return false;
     }
 
     public int sizeOf() {
-        return 0;
+        return this.totalDeAlunos;
     }
 
     public String toString() {
