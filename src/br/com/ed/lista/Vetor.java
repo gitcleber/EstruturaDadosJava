@@ -10,6 +10,12 @@ public class Vetor {
     private Aluno[] alunos = new Aluno[100];
 
     public void add(Aluno aluno) {
+        for (int i = 0; i < this.alunos.length; i++) {
+            if (alunos[i] == null) {
+                this.alunos[i] = aluno;
+                break;
+            }
+        }
 
     }
 
