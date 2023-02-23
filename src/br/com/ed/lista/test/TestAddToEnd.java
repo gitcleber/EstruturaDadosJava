@@ -3,7 +3,7 @@ package br.com.ed.lista.test;
 import br.com.ed.Aluno;
 import br.com.ed.lista.Vetor;
 
-public class TesteAddToEnd {
+public class TestAddToEnd {
     public static void main(String[] args) {
 
         Aluno a1 = new Aluno();

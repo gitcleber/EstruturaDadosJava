@@ -8,14 +8,19 @@ public class Vetor {
 
     // Declarando e Inicializando um array de Aluno com capacidade 100.
     private Aluno[] alunos = new Aluno[100];
+    private int totalDeAlunos = 0;
 
     public void add(Aluno aluno) {
-        for (int i = 0; i < this.alunos.length; i++) {
-            if (alunos[i] == null) {
-                this.alunos[i] = aluno;
-                break;
-            }
-        }
+        // for (int i = 0; i < this.alunos.length; i++) {
+        // if (this.alunos[i] == null) {
+        // this.alunos[i] = aluno;
+        // break;
+        // }
+        // }
+        // refactoring: add field totalDeAlunos for save the last idx free in alunos
+        // array
+        alunos[this.totalDeAlunos] = aluno;
+        this.totalDeAlunos++;
 
     }
 
